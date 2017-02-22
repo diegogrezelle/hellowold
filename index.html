@@ -1,11 +1,18 @@
 <html>
     <head>
        <title> Hello World</title>
+       <script type="text/javascript">
+            function showAlert() {
+                     var input = document.getElementById('texto');
+                 //alert('Hello World!');      
+                 alert(input.value); 
+            }
+       </script>
     </head>
     <boby>
         <div> 
-            <input type="text" />
-            <button>Salvar</button>
+            <input type="text" id="texto" />
+            <button onclick="showAlert()">Salvar</button>
         </div>    
     </boby>
 </html>    
